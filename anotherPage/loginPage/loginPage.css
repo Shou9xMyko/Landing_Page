@@ -1,0 +1,299 @@
+@font-face {
+  font-family: "Plus-Jakarta-Sans-Medium";
+  src: url(../../Font_Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Plus-Jakarta-Sans-Bold";
+  src: url(../../Font_Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  /* border-style: solid; */
+  border-bottom: 2px solid #d9d9d9;
+}
+
+nav ul {
+  margin-top: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.menu {
+  margin: 1em 6em 0px 0px;
+  display: flex;
+  align-items: center;
+}
+nav img {
+  margin-top: 15px;
+  width: 12em;
+  height: 2.5em;
+}
+
+nav ul div li a {
+  font-family: Plus-Jakarta-Sans-Medium;
+  font-size: medium;
+  color: black;
+  margin: 0px 0.5em;
+  text-decoration: none;
+}
+#navHome,
+#navAksi,
+#navArtikel {
+  position: relative;
+  text-decoration: none;
+}
+
+#navHome:after,
+#navAksi:after,
+#navArtikel:after {
+  content: "";
+  position: absolute;
+  background-color: #3f6600;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -6px;
+  transition: 0.2s ease-in-out;
+  border-radius: 10px;
+}
+
+#navHome:hover:after,
+#navAksi:hover:after,
+#navArtikel:hover:after {
+  width: 100%;
+}
+
+.btnDonasi {
+  padding: 0.5em 1.6em;
+  background-color: #14ae5c;
+  color: white;
+  border-radius: 6px;
+}
+
+.btnLogin {
+  padding: 0.5em 1.6em;
+  background-color: #14ae5c;
+  color: white;
+  border-radius: 6px;
+}
+
+/* Login Form */
+.wrapperFormLogin {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  background-color: white;
+  margin-top: 5em;
+  margin-bottom: 4em;
+}
+
+.form_container {
+  width: 30em;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 50px 40px 20px 40px;
+  font-family: Plus-Jakarta-Sans-Medium;
+}
+
+.relevanImage {
+  height: 30em;
+}
+
+.title_container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.6rem;
+  font-style: Plus-Jakarta-Sans-Bold;
+}
+
+.subtitle {
+  font-size: 0.8em;
+  margin-top: 0.7em;
+  max-width: 80%;
+  line-height: 1.1rem;
+}
+
+.buatAkun {
+  color: #3448ff;
+  text-decoration: none;
+}
+
+.input_container {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.icon {
+  width: 20px;
+  position: absolute;
+  z-index: 99;
+  left: 12px;
+  bottom: 9px;
+}
+.iconHideUnhidePassword {
+  width: 20px;
+  position: absolute;
+  z-index: 99;
+  right: 12px;
+  bottom: 9px;
+}
+
+.input_label {
+  font-size: 1em;
+  color: #073576;
+}
+
+.input_field {
+  width: auto;
+  height: 40px;
+  padding: 0 0 0 40px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  filter: drop-shadow(0px 1px 0px #efefef)
+    drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.input_field:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 2px #115dfc;
+  background-color: transparent;
+}
+
+.sign-in_btn {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  background: #115dfc;
+  border-radius: 7px;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Plus-Jakarta-Sans-Medium;
+}
+
+.forgetPassword {
+  text-align: center;
+  color: #3448ff;
+  font-size: 0.9em;
+}
+
+/* Footer */
+#footer {
+  background-color: #14ae5c;
+  font-family: Plus-Jakarta-Sans-Medium;
+}
+
+#footerJudul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0em 4em;
+  font-family: Plus-Jakarta-Sans-Medium;
+}
+
+#footerJudul1 {
+  color: #25ff01;
+}
+
+#footerJudul2 {
+  margin-left: 3.2em;
+  color: white;
+}
+
+#footerJudul3 {
+  margin-right: 2.5em;
+  color: white;
+}
+
+#deskripsiFooterJudul {
+  margin: 0 4em;
+  display: flex;
+  color: white;
+}
+
+#deskripsiFooterJudul1 {
+  width: 38%;
+}
+
+#tentangEnvironThink {
+  margin: 0;
+}
+
+#deskripsiFooterJudul2 {
+  margin-left: 5em;
+  width: 22%;
+}
+
+#wrapperDeskripsiFooterJudul1 {
+  display: flex;
+  margin-top: 0;
+}
+#Kontak1 {
+  display: flex;
+  margin-top: 0;
+  margin-left: 1em;
+}
+
+#wrapperDeskripsiFooterJudul2 {
+  display: flex;
+  margin-top: 0;
+}
+#Kontak2 {
+  display: flex;
+  margin-top: 2px;
+  margin-left: 0.5em;
+}
+
+#wrapperDeskripsiFooterJudul3 {
+  display: flex;
+  margin-top: 0;
+}
+#Kontak3 {
+  display: flex;
+  margin-top: 4px;
+  margin-left: 0.5em;
+}
+
+#deskripsiFooterJudul3 {
+  margin-left: 14em;
+  width: 20%;
+}
+
+/* Copyright */
+#copyRightLine {
+  margin: 1em 4em 0em 4em;
+  color: white;
+  border-style: solid;
+  border-color: white;
+}
+
+#wrapperCopyRight {
+  font-family: Plus-Jakarta-Sans-Medium;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4em;
+}
+
+#wordCopyRight,
+#indonesia {
+  margin: 0.5em 0em 1.2em 0em;
+}

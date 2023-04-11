@@ -1,0 +1,279 @@
+@font-face {
+  font-family: "Plus-Jakarta-Sans-Medium";
+  src: url(../../Font_Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Plus-Jakarta-Sans-Bold";
+  src: url(../../Font_Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Plus-Jakarta-Sans-Regular";
+  src: url(../../Font_Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  border-bottom: 2px solid #d9d9d9;
+}
+
+nav ul {
+  margin-top: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.menu {
+  margin: 1em 6em 0px 0px;
+  display: flex;
+  align-items: center;
+}
+nav img {
+  margin-top: 15px;
+  width: 12em;
+  height: 2.5em;
+}
+
+nav ul div li a {
+  font-family: Plus-Jakarta-Sans-Medium;
+  font-size: medium;
+  color: black;
+  margin: 0px 0.5em;
+  text-decoration: none;
+}
+#navHome,
+#navAksi,
+#navArtikel {
+  position: relative;
+  text-decoration: none;
+}
+
+#navHome:after,
+#navAksi:after,
+#navArtikel:after {
+  content: "";
+  position: absolute;
+  background-color: #3f6600;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -6px;
+  transition: 0.2s ease-in-out;
+  border-radius: 10px;
+}
+
+#navHome:hover:after,
+#navAksi:hover:after,
+#navArtikel:hover:after {
+  width: 100%;
+}
+
+.btnDonasi {
+  padding: 0.5em 1.6em;
+  background-color: #14ae5c;
+  color: white;
+  border-radius: 6px;
+}
+
+.btnLogin {
+  padding: 0.5em 1.6em;
+  background-color: #14ae5c;
+  color: white;
+  border-radius: 6px;
+}
+
+/* Artikel */
+#wrapper {
+  padding: 0 3em;
+}
+#judulArtikel {
+  font-family: "Plus-Jakarta-Sans-Bold";
+  margin-top: 1em !important;
+}
+
+#garisJudulArtikel {
+  margin-bottom: 3em;
+}
+
+#kontenDaftarArtikel {
+  display: flex;
+  justify-content: space-between;
+}
+
+#artikel {
+  width: 30.3%;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+}
+
+#artikel > img {
+  border-radius: 6px 6px 0px 0px;
+}
+
+#wrapperKontenDaftarArtikel {
+  margin: 0.8em;
+}
+
+#hashTag {
+  font-weight: bold;
+  color: #006dfd;
+  margin: 0 0 0.5em 0;
+  font-family: Plus-Jakarta-Sans-Medium;
+}
+
+#judulArtikel {
+  margin-bottom: 0.8em;
+  margin-top: 0;
+  font-family: "Plus-Jakarta-Sans-Bold";
+}
+
+#subJudulArtikel {
+  margin-bottom: 1em;
+  font-family: "Plus-Jakarta-Sans-Medium";
+  color: #6c6c6c;
+}
+#penulisArtikel {
+  font-family: "Plus-Jakarta-Sans-Medium";
+  color: #6f7376;
+}
+
+#dot {
+  height: 7px;
+  width: 7px;
+  background-color: #006dfd;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0em 0.3em 1.3px 0.3em;
+}
+
+#dot2 {
+  height: 7px;
+  width: 7px;
+  background-color: #6f7376;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0em 0.3em 1.3px 0.3em;
+}
+
+/* Button Artikel Lainnya */
+.wrapperButtonLainnya {
+  display: flex;
+  justify-content: center;
+}
+
+.btnArtikelLainnya {
+  font-family: Plus-Jakarta-Sans-Bold;
+  padding: 0.6em 3em;
+  background-color: white;
+  border: solid 1px #14ae5c;
+  color: #14ae5c;
+  border-radius: 4px;
+  margin: 2em 0em 4em 0em;
+}
+
+/* Footer */
+/* Footer */
+#footer {
+  background-color: #14ae5c;
+  font-family: Plus-Jakarta-Sans-Medium;
+}
+
+#footerJudul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0em 4em;
+  font-family: Plus-Jakarta-Sans-Medium;
+}
+
+#footerJudul1 {
+  color: #25ff01;
+}
+
+#footerJudul2 {
+  margin-left: 3.2em;
+  color: white;
+}
+
+#footerJudul3 {
+  margin-right: 2.5em;
+  color: white;
+}
+
+#deskripsiFooterJudul {
+  margin: 0 4em;
+  display: flex;
+  color: white;
+}
+
+#deskripsiFooterJudul1 {
+  width: 38%;
+}
+
+#tentangEnvironThink {
+  margin: 0;
+}
+
+#deskripsiFooterJudul2 {
+  margin-left: 5em;
+  width: 22%;
+}
+
+#wrapperDeskripsiFooterJudul1 {
+  display: flex;
+  margin-top: 0;
+}
+#Kontak1 {
+  display: flex;
+  margin-top: 0;
+  margin-left: 1em;
+}
+
+#wrapperDeskripsiFooterJudul2 {
+  display: flex;
+  margin-top: 0;
+}
+#Kontak2 {
+  display: flex;
+  margin-top: 2px;
+  margin-left: 0.5em;
+}
+
+#wrapperDeskripsiFooterJudul3 {
+  display: flex;
+  margin-top: 0;
+}
+#Kontak3 {
+  display: flex;
+  margin-top: 4px;
+  margin-left: 0.5em;
+}
+
+#deskripsiFooterJudul3 {
+  margin-left: 14em;
+  width: 20%;
+}
+
+/* Copyright */
+#copyRightLine {
+  margin: 1em 4em 0em 4em;
+  color: white;
+  border-style: solid;
+  border-color: white;
+}
+
+#wrapperCopyRight {
+  font-family: Plus-Jakarta-Sans-Medium;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4em;
+}
+
+#wordCopyRight,
+#indonesia {
+  margin: 0.5em 0em 1.2em 0em;
+}

@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
+
+body {
+  margin: 0;
+}
+
+nav ul {
+  margin-top: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.menu {
+  margin: 1em 6em 0px 0px;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  padding: 0;
+  margin: 0.5em 6em 0px 0px;
+  color: #14ae5c;
+  font-size: 1.7em;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+}
+
+nav ul div li a {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  color: black;
+  margin: 0px 0.5em;
+  text-decoration: none;
+}
+#navHome,
+#navAksi,
+#navArtikel {
+  position: relative;
+  text-decoration: none;
+}
+
+#navHome:after,
+#navAksi:after,
+#navArtikel:after {
+  content: "";
+  position: absolute;
+  background-color: #3f6600;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -6px;
+  transition: 0.2s ease-in-out;
+  border-radius: 10px;
+}
+
+#navHome:hover:after,
+#navAksi:hover:after,
+#navArtikel:hover:after {
+  width: 100%;
+}
+
+.btnDonasi {
+  padding: 0.5em 1.6em;
+  background-color: #14ae5c;
+  color: white;
+  border-radius: 6px;
+}
+
+.btnLogin {
+  padding: 0.5em 1.6em;
+  background-color: #14ae5c;
+  color: white;
+  border-radius: 6px;
+}
+
+/* Highlight */
+#Highlight {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  height: 38em;
+  background-image: url("https://images.pexels.com/photos/1230157/pexels-photo-1230157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.highlightCaption {
+  margin-left: 12em;
+  width: 60%;
+}
+
+#caption1 {
+  margin-top: 0;
+  color: white;
+  font-size: 3.8em;
+  text-shadow: 1px 1px 4px black;
+}
+
+#subCaption1 {
+  margin-top: 0;
+  color: white;
+}
+
+.btnHiglight {
+  padding: 0.7em 4em;
+  background-color: #14ae5c;
+  color: white;
+  font-size: 18px;
+  border: solid 0px #14ae5c;
+  border-radius: 2px;
+}
+
+/* Artikel */
+#Artikel {
+  padding: 0em 3.5em;
+}
+
+#artikelTerbaru {
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+}
+
+#garisArtikel {
+  width: 8%;
+  height: 3px;
+  border: 1px solid #14ae5c;
+  border-radius: 4px;
+  background-color: #14ae5c;
+}
+
+#wrapperDaftarArtikel {
+  display: flex;
+  margin: 2em 0em;
+}
+
+#gambarArtikel1,
+#gambarArtikel2,
+#gambarArtikel3,
+#gambarArtikel4 {
+  width: 390px;
+}
+
+#DeskripsiArtikel {
+  width: 65%;
+  margin: 0em 0em 0em 1.5em;
+  height: fit-content;
+}
+
+#hashTag {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  color: #006dfd;
+  margin: 0 0 0.5em 0;
+}
+
+#dot {
+  height: 7px;
+  width: 7px;
+  background-color: #006dfd;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0em 0.3em 1.3px 0.3em;
+}
+
+#judulArtikel,
+#judul1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+#isiArtikel1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+#dot2 {
+  height: 7px;
+  width: 7px;
+  background-color: #6f7376;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0em 0.3em 1.3px 0.3em;
+}
+
+#sumberDanWaktuArtikel {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  color: #6f7376;
+  margin-top: 1.4em;
+}
+
+/* Button Artikel Lainnya */
+.btnArtikelLainnya {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  padding: 0.6em 3em;
+  background-color: white;
+  border: solid 1px #14ae5c;
+  color: #14ae5c;
+  border-radius: 4px;
+  margin: 2em 0em 4em 0em;
+  text-align: center;
+}
+
+/* Informasi */
+#informasi {
+  background-image: url("https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  height: 35em;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#wrapperJudulInformasi {
+  text-align: center;
+  color: white;
+  padding-top: 4em;
+}
+
+/* Informasi */
+
+#judulInformasi {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 0em;
+}
+
+#subJudulInformasi {
+  margin-top: 0.5em;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+}
+
+#intiInformasi {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4em;
+}
+
+#imageInformasi1,
+#imageInformasi2,
+#imageInformasi3 {
+  width: 20%;
+  text-align: center;
+}
+
+#judulDeskripsiInformasi {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  color: white;
+  margin: 0.5em 0em 0em 0em;
+}
+#subJudulDeskripsiInformasi {
+  color: white;
+  margin-top: 0.3em;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Contact ME */
+#contactMe {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+#myForm {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 2em 0;
+}
+
+#judulHubungiKami {
+  margin-bottom: 0.5em;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2.2em;
+  text-align: center;
+  color: #14ae5c;
+}
+
+#name,
+#email,
+#city,
+#zip-code {
+  margin-bottom: 1.5em;
+  padding: 1em;
+  border: 2px solid #14ae5c;
+  border-radius: 6px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+}
+
+#name:focus,
+#email:focus,
+#city:focus,
+#zip-code:focus {
+  border: 2px solid #14ae5c;
+  outline: none;
+}
+
+.wrapperStatus {
+  display: flex;
+}
+
+#status {
+  width: 18px;
+  height: 18px;
+  margin-left: 0em;
+  padding: 0;
+}
+
+#check {
+  margin: 0.2em 0 1.5em 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+}
+
+#submit-form {
+  width: 22%;
+  padding: 0.7em 1em;
+  background-color: #14ae5c;
+  border: 0 solid;
+  border-radius: 4px;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+#warning {
+  margin: 1em 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+}
+
+/* Footer */
+#footer {
+  background-color: #14ae5c;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+}
+
+#footerJudul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0em 4em;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+}
+
+#footerJudul1 {
+  color: #25ff01;
+}
+
+#footerJudul2 {
+  margin-left: 4.5em;
+  color: white;
+}
+
+#footerJudul3 {
+  margin-right: 3.4em;
+  color: white;
+}
+
+#deskripsiFooterJudul {
+  margin: 0 4em;
+  display: flex;
+  color: white;
+}
+
+#deskripsiFooterJudul1 {
+  width: 38%;
+}
+#description {
+  margin: 0;
+}
+
+#link {
+  text-decoration: none;
+  color: #f01334;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+}
+
+#deskripsiFooterJudul2 {
+  margin-left: 5em;
+  width: 22%;
+}
+
+#wrapperDeskripsiFooterJudul1 {
+  display: flex;
+  margin-top: 0;
+}
+#Kontak1 {
+  display: flex;
+  margin-top: 0;
+  margin-left: 1em;
+}
+
+#wrapperDeskripsiFooterJudul2 {
+  display: flex;
+  margin-top: 0;
+}
+#Kontak2 {
+  display: flex;
+  margin-top: 2px;
+  margin-left: 0.5em;
+}
+
+#wrapperDeskripsiFooterJudul3 {
+  display: flex;
+  margin-top: 0;
+}
+#Kontak3 {
+  display: flex;
+  margin-top: 4px;
+  margin-left: 0.5em;
+}
+
+#deskripsiFooterJudul3 {
+  margin-left: 14em;
+  width: 20%;
+}
+
+/* Copyright */
+#copyRightLine {
+  margin: 1em 4em 0em 4em;
+  color: white;
+  border-style: solid;
+  border-color: white;
+}
+
+#wrapperCopyRight {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4em;
+}
+
+#wordCopyRight,
+#indonesia {
+  margin: 0.5em 0em 1.2em 0em;
+}
